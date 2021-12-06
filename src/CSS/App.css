@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
+
+/* font-family: 'Ephesis', cursive; */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+  user-select: none;
+}
+.large {
+  font-family: "Roboto", sans-serif;
+  font-size: 11vh;
+  line-height: 1;
+}
+.shadow {
+  text-shadow: 4px 4px 5px #bbb;
+}
+.cursive {
+  font-size: 14vh;
+  font-family: "Ephesis", cursive;
+  margin-right: 1%;
+}
+.grey {
+  color: gray;
+}
+.orange {
+  color: #d87501;
+}
+.card {
+}
+.landing-page {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-image: url(../Assets/BeeDrinkMobile.png);
+  background-position: center;
+  background-size: cover;
+}
+.mission-page {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-image: url(../Assets/Butterfly.png);
+  background-position: right;
+  background-size: cover;
+}
+.mission-page-2 {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-image: url(../Assets/orange.png);
+  background-position: left;
+  background-size: cover;
+}
+.mission-page-3 {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-image: url(../Assets/moth.png);
+  background-position: right;
+  background-size: cover;
+}
+
+.about-page {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../Assets/humming.png);
+  background-position: left;
+  background-size: cover;
+}
+.about-container {
+  height: 100vh;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 1rem;
+  color: #444;
+}
+.mission-1-container {
+  height: 100vh;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.5) 80%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 1.1rem;
+  color: #444;
+}
+.mission-2-container {
+  padding-top: 30%;
+  height: 100vh;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 1.1rem;
+  color: #444;
+}
+.mission-3-container {
+  padding-top: 30%;
+  height: 100vh;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 1.1rem;
+  color: #444;
+}
+.burger-menu {
+  display: flex;
+  height: 20%;
+  justify-content: flex-end;
+  padding: 3%;
+}
+
+.smCenter-lgRight {
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+@media screen and (min-width: 768px) {
+  .landing-page {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-image: url(../Assets/BeeDrink.png);
+    background-position: left;
+  }
+  .smCenter-lgRight {
+    align-items: flex-end;
+    margin-right: 10%;
+  }
+  .about-container {
+    height: 100%;
+    display: flex;
+    background: none;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 0%;
+    font-size: 1.35rem;
+    color: #444;
+  }
+  .mission-1-container {
+    padding-top: 0%;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    background: none;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 0%;
+    font-size: 1.25rem;
+    color: #ddd;
+  }
+  .mission-2-container {
+    padding-top: 0%;
+    height: 100%;
+    width: 70%;
+    display: flex;
+    background: none;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: end;
+    margin-left: 30%;
+    font-size: 1.25rem;
+    color: #bbb;
+  }
+  .mission-3-container {
+    padding-top: 0%;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    background: none;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 0%;
+    font-size: 1.25rem;
+    color: #bbb;
+  }
+}

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+/* font-family: 'Ephesis', cursive; */
+
+*{
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 3.5vh;
+}
+
+
+[class*="col-"] {
+  float: left;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+}
+
+
+[class*="page-"] {
+  float: left;
+  padding: 15px;
+}
+
+.page-1{
+  background-color: rgba(0,0,0,0.5);
+
+  height: 100vh;
+}
+
+.circle{
+  background-size: 100vh;
+  height: 40vh;
+  width: 40vh;
+  border-radius: 50%;
+}
+
+.butterfly{
+  background-image: url(../Assets/Butterfly.png);
+  background-position:100% 80%;
+}
+
+.humming{
+  background-image: url(../Assets/humming.png);
+  background-position:100% 80%;
+}
+.gradient {
+  background: rgb(0,0,0);
+  background: linear-gradient(183deg, rgba(0,0,0,0.6923144257703081) 50%, rgba(255,255,255,0) 85%);
+}
+@media screen and (min-width: 768px) {
+  .page-1{
+    background-image: url(../Assets/Butterfly.png);
+    background-position: 90% 70%;
+    background-color:honeydew;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .gradient{
+   background: none;
+  }
+  .circle{
+    display: none;
+  }
+}
+
+.TitleSans{
+  font-size: 12vmin;
+}
+
+.centerText{
+  text-align: center;
+  padding: 10%;
+
+}
+
+
+.TitleCursive{
+  color: #D87501;
+  font-size:16vmin;
+  
+  font-family: 'Ephesis', cursive;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.header{
+  background-image: url(../Assets/BeauBee.png);
+  background-position: center;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 10vh;
+  align-items: center;
+}
+.image{
+  height: 50vh;
+}
+.overlay{
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 7vh;
+  color: white;
+}
+.cursive{
+  font-family: 'Ephesis', cursive;
+  font-size: 8vh;
+}
+
+
+.footer{
+  background-color: rgba(0,0,0,0.8);
+  height: 33.33vh
+}
+.divider{
+  background-color: rgba(0,0,0,0.8);
+  height: 20vh
+}
