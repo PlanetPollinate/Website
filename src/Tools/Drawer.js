@@ -34,6 +34,7 @@ export default function SwipeableTemporaryDrawer() {
     navigate("/" + text);
   };
 
+
   const list = (anchor) => (
     <Box
       sx={{ width: 170 }}
@@ -42,7 +43,7 @@ export default function SwipeableTemporaryDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {["Home", "About"].map((text, index) => (
+        {["Home", "Mission", "About"].map((text, index) => (
           <ListItem
             button
             key={text}
@@ -56,29 +57,6 @@ export default function SwipeableTemporaryDrawer() {
       </List>
     </Box>
   );
-
-  // const list = (anchor) => (
-  //   <Box
-  //     sx={{ width: 170 }}
-  //     role="presentation"
-  //     onClick={toggleDrawer(anchor, false)}
-  //     onKeyDown={toggleDrawer(anchor, false)}
-  //   >
-  //     <List>
-  //       {["Home", "Mission", "About"].map((text, index) => (
-  //         <ListItem
-  //           button
-  //           key={text}
-  //           onClick={() => {
-  //             navigateTo(text);
-  //           }}
-  //         >
-  //           <ListItemText primary={text} />
-  //         </ListItem>
-  //       ))}
-  //     </List>
-  //   </Box>
-  // );
 
   return (
     <div>
