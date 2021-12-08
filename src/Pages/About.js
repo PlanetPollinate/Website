@@ -12,7 +12,7 @@ export default function About() {
         <Jumbotron page="about" />
       </div>
       <div class="about-container">
-        <div class="card">
+        <div class="cards">
           <div class="title cursive">Us</div>
           <p>
             We are a small group of IT professionals with over 125 years
