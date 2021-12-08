@@ -16,6 +16,7 @@ export default function SwipeableTemporaryDrawer() {
   const [state, setState] = React.useState({
     right: false,
   });
+  const [invis, setInvis] = React.useState(1)
   let navigate = useNavigate();
 
   const toggleDrawer = (anchor, open) => (event) => {
@@ -28,6 +29,12 @@ export default function SwipeableTemporaryDrawer() {
     }
 
     setState({ ...state, [anchor]: open });
+    if(invis === 1){
+      setInvis(0);
+    }
+    else{
+      setInvis(1);
+    }
   };
 
   const navigateTo = (text) => {
@@ -64,7 +71,7 @@ export default function SwipeableTemporaryDrawer() {
         <React.Fragment key={anchor}>
           <MenuRounded
             fontSize="large"
-            sx={{ position: "fixed", right: "3%" }}
+            sx={{ position: "fixed", right: "3%", opacity: invis }}
             onClick={toggleDrawer(anchor, true)}
           />
           <SwipeableDrawer

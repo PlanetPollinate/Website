@@ -27,8 +27,7 @@
 .orange {
   color: #d87501;
 }
-.card {
-}
+
 .landing-page {
   height: 100vh;
   width: 100vw;
@@ -38,6 +37,8 @@
   background-size: cover;
 }
 .mission-page {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
@@ -46,6 +47,8 @@
   background-size: cover;
 }
 .mission-page-2 {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
@@ -54,6 +57,8 @@
   background-size: cover;
 }
 .mission-page-3 {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
@@ -87,7 +92,7 @@
   color: #444;
 }
 .mission-1-container {
-  height: 100vh;
+  height: 90vh;
   background: rgb(255, 255, 255);
   background: linear-gradient(
     0deg,
@@ -96,6 +101,7 @@
     rgba(255, 255, 255, 0) 100%
   );
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   padding-left: 10%;
@@ -114,6 +120,7 @@
     rgba(255, 255, 255, 0) 100%
   );
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   padding-left: 10%;
@@ -132,6 +139,7 @@
     rgba(255, 255, 255, 0) 100%
   );
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   padding-left: 10%;
@@ -155,7 +163,7 @@
   margin-top: 10%;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
   .landing-page {
     height: 100vh;
     width: 100vw;
@@ -180,7 +188,8 @@
   .mission-1-container {
     padding-top: 0%;
     width: 70%;
-    height: 100%;
+    height: 100vh;
+    flex-direction: row;
     display: flex;
     background: none;
     align-items: center;
@@ -191,9 +200,9 @@
   }
   .mission-2-container {
     padding-top: 0%;
-    height: 100%;
     width: 70%;
     display: flex;
+    flex-direction: row;
     background: none;
     align-items: center;
     justify-content: flex-end;
@@ -207,6 +216,7 @@
     width: 70%;
     height: 100%;
     display: flex;
+    flex-direction: row;
     background: none;
     align-items: center;
     justify-content: flex-start;
@@ -214,4 +224,27 @@
     font-size: 1.25rem;
     color: #bbb;
   }
+}
+.bottom-scroll {
+  height: 10vh;
+  width: 100%;
+  background-color: red;
+  position: absolute;
+}
+.card {
+  font-size: 1.7vh;
+  width: 100%;
+}
+.footer {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
