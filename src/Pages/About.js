@@ -16,7 +16,6 @@ export default function About() {
           <div class="title cursive">Us</div>
           <p>
             We are a small group of IT professionals with over 125 years
-            <br />
             experience and a passion for our environment.
             <br />
             <br />
@@ -28,16 +27,13 @@ export default function About() {
               <br />
               <li>
                 provide knowledge and evidence to build a greater understanding
-                of
-                <br />
-                the effect that farming and building practices have on the
+                of the effect that farming and building practices have on the
                 environment
               </li>
               <br />
 
               <li>
                 and to provide ways of enabling immediate intervention,
-                <br />
                 alongside medium and long term change.
               </li>
             </ul>

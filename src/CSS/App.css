@@ -162,7 +162,10 @@
   align-items: center;
   margin-top: 10%;
 }
-
+.card {
+  font-size: 1.7vh;
+  width: 100%;
+}
 @media screen and (min-width: 900px) {
   .landing-page {
     height: 100vh;
@@ -224,6 +227,10 @@
     font-size: 1.25rem;
     color: #bbb;
   }
+  .card {
+    font-size: 2.25vh;
+    width: 100%;
+  }
 }
 .bottom-scroll {
   height: 10vh;
@@ -231,12 +238,9 @@
   background-color: red;
   position: absolute;
 }
-.card {
-  font-size: 1.7vh;
-  width: 100%;
-}
+
 .cards {
-  font-size: 1.7vh;
+  font-size: 2vh;
 }
 .footer {
   height: 10vh;
